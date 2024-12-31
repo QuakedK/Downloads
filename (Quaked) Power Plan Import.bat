@@ -133,6 +133,7 @@ if /i "%option%"=="Y" (
 )
 
 :Done
+rd /s /q "C:\Power Plan" >nul 2>&1
 exit
 
 
