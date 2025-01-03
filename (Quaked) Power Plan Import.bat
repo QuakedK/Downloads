@@ -108,9 +108,6 @@ echo Did the Power Plan import correctly? (Y/N)
 set /p option="Enter option number: "
 if /i "%option%"=="Y" (
     taskkill /F /FI "WINDOWTITLE eq Power Options" >nul 2>&1
-    powercfg -delete 381b4222-f694-41f0-9685-ff5bb260df2e >nul 2>&1
-    powercfg -delete a1841308-3541-4fab-bc81-f71556f20b4a >nul 2>&1
-    powercfg -delete e9a42b02-d5df-448d-aa00-03f14749eb61 >nul 2>&1
     goto :Done
 ) else if /i "%option%"=="N" (
     echo.
