@@ -9,7 +9,7 @@ color 9
 :: (Quaked) Check for Admin Privileges.
 fltmc >nul 2>&1
 if not %errorlevel% == 0 (
-    powershell -Command "Write-Host 'Oneclick is required to be run as *Administrator.*' -ForegroundColor White -BackgroundColor Red" 
+    powershell -Command "Write-Host 'Explorer Restart is required to be run as *Administrator.*' -ForegroundColor White -BackgroundColor Red" 
     powershell -Command "Write-Host 'Please Click *Yes* to the following prompt!' -ForegroundColor White -BackgroundColor Red" 
     timeout 3 > nul
     PowerShell Start -Verb RunAs '%0'
