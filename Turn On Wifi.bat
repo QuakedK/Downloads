@@ -1,7 +1,22 @@
-:: (Quaked) Wifi Fixer.
+:: Made by Quaked
+:: TikTok: _Quaked_
+:: Discord: https://discord.gg/B8EmFVkdFU
+ 
 @echo off
-cls
+title Wifi Fixer V2.0 
 color 9
+
+:: (Quaked) Check for Admin Privileges.
+fltmc >nul 2>&1
+if not %errorlevel% == 0 (
+    powershell -Command "Write-Host 'Wifi Fixer is required to be run as *Administrator.*' -ForegroundColor White -BackgroundColor Red" 
+    powershell -Command "Write-Host 'Please Click *Yes* to the following prompt!' -ForegroundColor White -BackgroundColor Red" 
+    timeout 3 > nul
+    PowerShell Start -Verb RunAs '%0'
+    exit /b 0
+)
+
+:: (Quaked) Wifi Fixer.
 chcp 65001 >nul 2>&1
 echo.
 echo.
