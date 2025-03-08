@@ -1,4 +1,20 @@
+:: Made by Quaked
+:: TikTok: _Quaked_
+:: Discord: https://discord.gg/B8EmFVkdFU
+ 
 @echo off
+title Bluetooth Fixer
+color 9
+
+:: (Quaked) Check for Admin Privileges.
+fltmc >nul 2>&1
+if not %errorlevel% == 0 (
+    powershell -Command "Write-Host 'Roblox Optimizer is required to be run as *Administrator.*' -ForegroundColor White -BackgroundColor Red" 
+    powershell -Command "Write-Host 'Please Click *Yes* to the following prompt!' -ForegroundColor White -BackgroundColor Red" 
+    timeout 3 > nul
+    PowerShell Start -Verb RunAs '%0'
+    exit /b 0
+)
 
 echo Reverting Service Changes!
 reg add "HKLM\System\CurrentControlSet\Services\PimIndexMaintenanceSvc" /v "Start" /t REG_DWORD /d "3" /f
@@ -42,7 +58,7 @@ sc config XboxNetApiSvc start= demand
 sc config XblGameSave start= demand
 sc config SEMgrSvc start= demand
 sc config iphlpsvc start= demand
-sc config Backupper Service" start= demand
+sc config "Backupper Service" start= demand
 sc config BthAvctpSvc start= demand
 sc config BDESVC start= demand
 sc config cbdhsvc start= demand
