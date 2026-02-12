@@ -1,5 +1,5 @@
 # Nvidia GPU Tweaks
-<img width="978" height="512" alt="image" src="https://github.com/user-attachments/assets/1523db67-467c-4664-b697-a9cb611e1033" />
+<img width="978" height="512" alt="image" src="https://github.com/user-attachments/assets/757cb2f9-728e-46bb-ae97-5a2be4c8cb80" />
 
 # Download Failed?
 1. Download and extract [NvidiaGPUTweaks.zip](https://github.com/QuakedK/Downloads/blob/main/NvidiaGPUTweaks.zip).
