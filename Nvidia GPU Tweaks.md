@@ -1,6 +1,12 @@
 # Nvidia GPU Tweaks
 <img width="978" height="512" alt="image" src="https://github.com/user-attachments/assets/757cb2f9-728e-46bb-ae97-5a2be4c8cb80" />
 
+# Usage
+1. Download [Nvidia Folder](https://github.com/QuakedK/Downloads/raw/refs/heads/main/(Quaked)%20Nivida%20Gpu.zip).
+2. Watch [DDU and Nvcleaninstall](https://www.youtube.com/watch?v=0oN5dWyUV_g).
+
+**Note: The other things in here, go over issues or how to revert things!**
+
 # Download Failed?
 1. Download and extract [NvidiaGPUTweaks.zip](https://github.com/QuakedK/Downloads/blob/main/NvidiaGPUTweaks.zip).
 2. Drag the file to your C Drive. Example ```"C:\NvidiaGPUTweaks"```
@@ -33,4 +39,4 @@ reg delete "HKCR\DesktopBackground\Shell\NvidiaContainer" /f
 5. Now right-click ```"C:\Nvidia GPU Tweaks\Backup\Nvidia.reg"``` and click Open/Merge.
 6. Now Restart!
 
-**Note: If Nvidia.reg backup failed to copy/backup, you cannot do this!**
+**Note: If Nvidia.reg Backup failed to copy/backup, you cannot do this!**
