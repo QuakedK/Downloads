@@ -8,6 +8,8 @@
 
 ```"C:\Nvidia GPU Tweaks"```.
 
+```"C:\Nvidia GPU Tweaks\Backup"```.
+
 ```"C:\Nvidia GPU Tweaks\Nvidia Container"```.
 
 ```"C:\Nvidia GPU Tweaks\Nvidia Profile Inspector"```.
