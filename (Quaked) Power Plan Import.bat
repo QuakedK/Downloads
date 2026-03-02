@@ -17,7 +17,7 @@ if not %errorlevel% == 0 (
 )
 
 :: (Quaked) Downloading Power Plan at Start.
-set "fileURL=https://github.com/QuakedK/Oneclick/raw/refs/heads/main/Downloads/PowerPlans.zip"
+set "fileURL=https://github.com/QuakedK/Oneclick/raw/refs/heads/main/Downloads/V8.0/PowerPlans.zip"
 set "fileName=Power Plan.zip"
 set "extractFolder=C:\Power Plan"
 set "downloadsFolder=C:\"
@@ -131,6 +131,7 @@ if /i "%option%"=="Y" (
 :Done
 rd /s /q "C:\Power Plan" >nul 2>&1
 exit
+
 
 
 
