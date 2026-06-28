@@ -3,8 +3,7 @@
 # Power Plan not importing?
 1. Simple open CMD as admin and paste the following ↓
 ```
-sc config "EpicGamesUpdater" start=auto 
-sc config "EpicOnlineServices" start=auto 
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v PlatformAoAcOverride /t REG_DWORD /d "0" /f
 ```
 2. Restart your pc!
 3. Re-run the [Power Importer](https://github.com/QuakedK/Downloads/blob/main/(Quaked)%20Power%20Plan%20Import.bat).
